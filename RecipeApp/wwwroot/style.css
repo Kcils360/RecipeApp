@@ -1,14 +1,18 @@
 ﻿body {
+    margin: 0 auto;
 }
 
 header {
     width: 100%;
-    height: 100px;
-    background-color: black;
+    height: 2em;
+    background: linear-gradient(to right, #c21500, #ffc500);
 }
 
 footer {
     width: 100%;
-    height: 100px;
-    background-color: black;
+    height: 2em;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, #c21500, #ffc500);
+    color: white;
 }
