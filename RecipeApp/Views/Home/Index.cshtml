@@ -1,4 +1,5 @@
-﻿
+﻿<link rel="stylesheet" type="text/css" href="~/style.css" />
+
 @{
     ViewData["Title"] = "Index";
     Layout = "_Layout";
@@ -8,3 +9,6 @@
 
 <h3>This is a place for recipes.</h3>
 
+<a asp-controller="Recipes" asp-action="Index">
+    <input type="button" value="Recipes" class="btn-primary" />
+</a>
