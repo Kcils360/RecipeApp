@@ -14,7 +14,7 @@ namespace RecipeApp.Models
         public string Name { get; set; }
 
         [Required]
-        public string Ingredients { get; set; }
+        public List<Ingredients> Ingredients { get; set; }
 
         [Required]
         public string Directions { get; set; }
