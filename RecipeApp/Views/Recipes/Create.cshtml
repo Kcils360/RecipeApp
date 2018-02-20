@@ -1,17 +1,10 @@
 ﻿@model RecipeApp.Models.Recipe
 
 @{
-    Layout = "_Layout";
+    ViewData["Title"] = "Create";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
-</head>
-<body>
+<h2>Create</h2>
 
 <h4>Recipe</h4>
 <hr />
@@ -25,13 +18,8 @@
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Ingredients" class="control-label"></label>
-                <textarea asp-for="Ingredients" class="form-control" rows="5"></textarea>
-                <span asp-validation-for="Ingredients" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="Directions" class="control-label"></label>
-                <textarea asp-for="Directions" class="form-control" rows="5"></textarea>
+                <input asp-for="Directions" class="form-control" />
                 <span asp-validation-for="Directions" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -45,5 +33,6 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-</body>
-</html>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

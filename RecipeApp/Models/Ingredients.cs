@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,18 +10,10 @@ namespace RecipeApp.Models
     {
         public int ID { get; set; }
         public int RecipeID { get; set; }
-        public Quantity Quantity { get; set; }
-        public Quantity Quantity2 { get; set; }
+        public string Quantity { get; set; }
+        public Size Size { get; set; }
+        public string Ingredient { get; set; }
+
 
     }
-
-    
-    enum Quantity
-    {
-        "1/8,
-        BoldTag,
-        ItalicsTag,
-        HyperlinkTag,
-    };
-
 }
