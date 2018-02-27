@@ -10,12 +10,40 @@
     padding: 5px 15px;
     border: none;
     border-radius: 5px;
+    width: 105px;
 }
 
 header {
     width: 100%;
     height: 2em;
     background: linear-gradient(to right, #c21500, #ffc500);
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    /*text-align: center;*/
+}
+
+.title h1, .title h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.hero {
+    display: block;
+    width: 100%;
+    height: 480px;
+    margin-bottom: 1em;
+    background-color: gray;
+}
+
+.mainButton {
+    width: 100%;
+}
+
+#btn-toRecipes {
+    margin-left: calc(50% - 52.5px);
 }
 
 footer {
@@ -25,4 +53,10 @@ footer {
     bottom: 0;
     background: linear-gradient(to right, #c21500, #ffc500);
     color: white;
+}
+
+.footerInfo {
+    display: block;
+    margin-top: 0.5em;
+    margin-left: 1em;
 }
